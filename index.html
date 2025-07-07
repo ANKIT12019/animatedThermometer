@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Thermometer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animated Thermometer</h1>
+        <div class="thermometer-section">
+            <div class="thermometer">
+                <div class="thermometer-inner" id="thermometer-inner"></div>
+                <div class="thermometer-bulb"></div>
+                <div class="min-marker" id="min-marker"></div>
+                <div class="max-marker" id="max-marker"></div>
+            </div>
+            <div class="temp-info">
+                <input type="number" id="temp-input" placeholder="Enter temperature">
+                <button id="set-temp">Set</button>
+                <button id="fetch-weather">Fetch Weather</button>
+                <select id="unit-toggle">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="history-section">
+            <h2>Temperature History</h2>
+            <canvas id="history-chart" width="400" height="150"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
